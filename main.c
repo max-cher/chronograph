@@ -836,7 +836,7 @@ void correct_mass(void) {
     M = 1;
     counter8 = 0;
     while(counter8 < 3) {
-        if(b0) {
+        if(b0) {            // edit position digit
             switch(counter8) {
                 case 0: {
                     m0 ++;
@@ -864,7 +864,7 @@ void correct_mass(void) {
             delay(2);
         }
         
-        if(b1) {
+        if(b1) {        // switch to edit next position
             counter8++;
             if(counter8 == 1 && m0 == 2 && m1 > 5)
                 m1 = 5;
